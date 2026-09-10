@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>防患于未然课件-安全教育培训课件资源与使用指南</title>
+<meta name="description" content="防患于未然课件资源站，提供校园安全、消防安全、生产安全、应急避险等主题课件的结构设计、内容要点、使用建议与常见问题解答，帮助教师与培训人员做好预防性安全教育。">
+<meta name="keywords" content="防患于未然课件,安全教育课件,预防性安全培训,应急避险课件,校园安全课件,消防安全课件,安全生产培训">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+  :root{
+    --main:#1c5d99;
+    --main-dark:#123f6b;
+    --accent:#e8a33d;
+    --accent-soft:#fdf3e2;
+    --bg:#f4f7fa;
+    --card:#ffffff;
+    --text:#22303d;
+    --text-soft:#5c6b7a;
+    --line:#dde5ec;
+    --radius:10px;
+    --shadow:0 4px 18px rgba(23,55,88,.08);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.75;
+    font-size:16px;
+  }
+  a{color:var(--main);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  img{max-width:100%;}
+  .container{
+    width:100%;
+    max-width:1160px;
+    margin:0 auto;
+    padding:0 20px;
+  }
+
+  /* ---------- 顶部信息条 ---------- */
+  .topbar{
+    background:var(--main-dark);
+    color:#cfe0f0;
+    font-size:13px;
+    padding:7px 0;
+  }
+  .topbar .container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:6px;
+  }
+  .topbar span{opacity:.9;}
+
+  /* ---------- 页眉 ---------- */
+  header.site-header{
+    background:linear-gradient(135deg,#1c5d99 0%,#2b7bbd 100%);
+    color:#fff;
+    padding:26px 0 22px;
+  }
+  .header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+  }
+  .brand-mark{
+    width:52px;
+    height:52px;
+    border-radius:12px;
+    background:rgba(255,255,255,.16);
+    border:1px solid rgba(255,255,255,.35);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-1px;
+    flex-shrink:0;
+  }
+  .brand-text h1{
+    font-size:22px;
+    font-weight:700;
+    line-height:1.3;
+    letter-spacing:.5px;
+  }
+  .brand-text p{
+    font-size:13px;
+    color:#d3e5f6;
+    margin-top:2px;
+  }
+  .header-tip{
+    font-size:13px;
+    background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);
+    border-radius:999px;
+    padding:7px 16px;
+    color:#eaf4ff;
+    white-space:nowrap;
+  }
+
+  /* ---------- 导航 ---------- */
+  nav.main-nav{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    box-shadow:0 2px 8px rgba(23,55,88,.05);
+    position:sticky;
+    top:0;
+    z-index:50;
+  }
+  nav.main-nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:4px;
+    padding:0;
+  }
+  nav.main-nav a{
+    display:block;
+    padding:14px 18px;
+    font-size:15px;
+    color:var(--text);
+    border-bottom:3px solid transparent;
+    transition:.2s;
+  }
+  nav.main-nav a:hover,
+  nav.main-nav a.active{
+    color:var(--main);
+    border-bottom-color:var(--accent);
+    text-decoration:none;
+    background:#f8fbfe;
+  }
+
+  /* ---------- 首屏 ---------- */
+  .hero{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:44px 0 40px;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr;
+    gap:40px;
+    align-items:start;
+  }
+  .hero h2{
+    font-size:30px;
+    line-height:1.4;
+    color:var(--main-dark);
+    margin-bottom:16px;
+    letter-spacing:.5px;
+  }
+  .hero h2 em{
+    font-style:normal;
+    color:var(--accent);
+  }
+  .hero p.lead{
+    font-size:16px;
+    color:var(--text-soft);
+    margin-bottom:18px;
+  }
+  .hero-points{
+    list-style:none;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px 24px;
+    margin-top:6px;
+  }
+  .hero-points li{
+    position:relative;
+    padding-left:22px;
+    font-size:14.5px;
+    color:var(--text);
+  }
+  .hero-points li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:9px;
+    width:9px;
+    height:9px;
+    border-radius:2px;
+    background:var(--accent);
+  }
+  .hero-side{
+    background:var(--accent-soft);
+    border:1px solid #f0dcb8;
+    border-radius:var(--radius);
+    padding:22px 22px 18px;
+  }
+  .hero-side h3{
+    font-size:17px;
+    color:#8a5a12;
+    margin-bottom:12px;
+    padding-bottom:10px;
+    border-bottom:1px dashed #e6cf9f;
+  }
+  .hero-side ol{
+    padding-left:20px;
+    font-size:14px;
+    color:#6b5222;
+  }
+  .hero-side li{margin-bottom:9px;}
+  .hero-side li strong{color:#8a5a12;}
+
+  /* ---------- 通用区块 ---------- */
+  section.block{
+    padding:46px 0 10px;
+  }
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+    margin-bottom:8px;
+    flex-wrap:wrap;
+  }
+  .section-head h2{
+    font-size:23px;
+    color:var(--main-dark);
+    position:relative;
+    padding-left:16px;
+  }
+  .section-head h2::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:6px;
+    bottom:6px;
+    width:5px;
+    border-radius:3px;
+    background:var(--accent);
+  }
+  .section-head .sub{
+    font-size:13.5px;
+    color:var(--text-soft);
+  }
+  .section-intro{
+    font-size:15px;
+    color:var(--text-soft);
+    margin:10px 0 26px;
+    max-width:900px;
+  }
+
+  /* ---------- 课件分类卡片 ---------- */
+  .cat-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+  }
+  .cat-card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:22px 20px;
+    box-shadow:var(--shadow);
+    display:flex;
+    flex-direction:column;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .cat-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 24px rgba(23,55,88,.12);
+  }
+  .cat-tag{
+    display:inline-block;
+    font-size:12px;
+    color:#fff;
+    background:var(--main);
+    border-radius:4px;
+    padding:2px 9px;
+    margin-bottom:12px;
+    align-self:flex-start;
+  }
+  .cat-card h3{
+    font-size:17.5px;
+    color:var(--main-dark);
+    margin-bottom:10px;
+  }
+  .cat-card p{
+    font-size:14px;
+    color:var(--text-soft);
+    flex:1;
+    margin-bottom:14px;
+  }
+  .cat-card .meta{
+    font-size:13px;
+    color:#8b98a5;
+    border-top:1px dashed var(--line);
+    padding-top:10px;
+  }
+
+  /* ---------- 结构拆解（时间线式） ---------- */
+  .structure{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:8px 0;
+    box-shadow:var(--shadow);
+  }
+  .step{
+    display:grid;
+    grid-template-columns:64px 1fr;
+    gap:18px;
+    padding:20px 26px;
+    border-bottom:1px solid #eef3f7;
+  }
+  .step:last-child{border-bottom:none;}
+  .step-num{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    background:var(--accent-soft);
+    border:1px solid #f0dcb8;
+    color:#9a6413;
+    font-weight:700;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .step-body h3{
+    font-size:16.5px;
+    color:var(--main-dark);
+    margin-bottom:6px;
+  }
+  .step-body p{
+    font-size:14.5px;
+    color:var(--text-soft);
+  }
+  .step-body ul{
+    margin-top:8px;
+    padding-left:20px;
+    font-size:14px;
+    color:var(--text-soft);
+  }
+  .step-body li{margin-bottom:4px;}
+
+  /* ---------- 两栏内容区 ---------- */
+  .two-col{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:28px;
+    align-items:start;
+  }
+  .article-box{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px 28px;
+    box-shadow:var(--shadow);
+  }
+  .article-box h3{
+    font-size:18px;
+    color:var(--main-dark);
+    margin-bottom:12px;
+  }
+  .article-box h3:not(:first-child){margin-top:26px;}
+  .article-box p{
+    font-size:15px;
+    color:var(--text-soft);
+    margin-bottom:12px;
+  }
+  .article-box ul,.article-box ol{
+    padding-left:22px;
+    font-size:15px;
+    color:var(--text-soft);
+    margin-bottom:12px;
+  }
+  .article-box li{margin-bottom:7px;}
+  .article-box strong{color:var(--text);}
+
+  .side-box{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px 22px;
+    box-shadow:var(--shadow);
+    margin-bottom:22px;
+  }
+  .side-box h3{
+    font-size:16px;
+    color:var(--main-dark);
+    margin-bottom:12px;
+    padding-bottom:9px;
+    border-bottom:1px solid var(--line);
+  }
+  .side-list{
+    list-style:none;
+    font-size:14px;
+  }
+  .side-list li{
+    padding:9px 0;
+    border-bottom:1px dashed #eef3f7;
+    color:var(--text-soft);
+    display:flex;
+    gap:8px;
+  }
+  .side-list li:last-child{border-bottom:none;}
+  .side-list .dot{
+    color:var(--accent);
+    font-weight:700;
+    flex-shrink:0;
+  }
+  .warn-box{
+    background:#fdf3e2;
+    border:1px solid #f0dcb8;
+    border-radius:var(--radius);
+    padding:18px 20px;
+    font-size:14px;
+    color:#7d5a1c;
+  }
+  .warn-box h3{
+    font-size:15.5px;
+    color:#8a5a12;
+    margin-bottom:8px;
+  }
+  .warn-box ul{padding-left:20px;}
+  .warn-box li{margin-bottom:6px;}
+
+  /* ---------- 使用建议表 ---------- */
+  .table-wrap{
+    overflow-x:auto;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:14.5px;
+    min-width:640px;
+  }
+  thead th{
+    background:#eef4fa;
+    color:var(--main-dark);
+    text-align:left;
+    padding:13px 18px;
+    font-weight:700;
+    border-bottom:1px solid var(--line);
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:13px 18px;
+    border-bottom:1px solid #eef3f7;
+    color:var(--text-soft);
+    vertical-align:top;
+  }
+  tbody tr:last-child td{border-bottom:none;}
+  tbody tr:nth-child(even){background:#fafcfe;}
+  tbody td strong{color:var(--text);}
+
+  /* ---------- FAQ ---------- */
+  .faq-list{
+    display:grid;
+    gap:14px;
+  }
+  .faq-item{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:18px 22px;
+    box-shadow:var(--shadow);
+  }
+  .faq-item h3{
+    font-size:16px;
+    color:var(--main-dark);
+    margin-bottom:8px;
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+  }
+  .faq-item h3 .q{
+    color:var(--accent);
+    font-weight:700;
+    flex-shrink:0;
+  }
+  .faq-item p{
+    font-size:14.5px;
+    color:var(--text-soft);
+    padding-left:26px;
+  }
+
+  /* ---------- 场景提示 ---------- */
+  .scene-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+  }
+  .scene-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-left:4px solid var(--main);
+    border-radius:6px;
+    padding:18px 18px 16px;
+    box-shadow:var(--shadow);
+  }
+  .scene-card h3{
+    font-size:15.5px;
+    color:var(--main-dark);
+    margin-bottom:8px;
+  }
+  .scene-card p{
+    font-size:13.5px;
+    color:var(--text-soft);
+  }
+
+  /* ---------- 页脚 ---------- */
+  footer.site-footer{
+    margin-top:56px;
+    background:#173a5c;
+    color:#b9cde0;
+    padding:38px 0 22px;
+    font-size:14px;
+  }
+  .footer-grid{
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr;
+    gap:30px;
+    padding-bottom:26px;
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+  .footer-grid h4{
+    color:#fff;
+    font-size:15.5px;
+    margin-bottom:12px;
+  }
+  .footer-grid p{font-size:13.5px;line-height:1.8;}
+  .footer-grid ul{list-style:none;font-size:13.5px;}
+  .footer-grid li{margin-bottom:8px;}
+  .footer-grid a{color:#b9cde0;}
+  .footer-grid a:hover{color:#fff;}
+  .copyright{
+    text-align:center;
+    font-size:13px;
+    color:#8ba6c0;
+    padding-top:18px;
+  }
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .two-col{grid-template-columns:1fr;}
+    .scene-grid{grid-template-columns:repeat(2,1fr);}
+    .footer-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    body{font-size:15px;}
+    .hero h2{font-size:23px;}
+    .hero-points{grid-template-columns:1fr;}
+    .cat-grid{grid-template-columns:1fr;}
+    .scene-grid{grid-template-columns:1fr;}
+    .footer-grid{grid-template-columns:1fr;}
+    nav.main-nav a{padding:12px 13px;font-size:14px;}
+    .step{grid-template-columns:1fr;gap:10px;padding:18px 18px;}
+    .article-box{padding:20px 18px;}
+    .header-tip{display:none;}
+    section.block{padding:34px 0 6px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>安全教育课件资源整理 · 面向教师与培训人员</span>
+    <span>内容持续更新 · 请结合本单位实际情况使用</span>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <div class="brand-mark">安</div>
+      <div class="brand-text">
+        <h1>防患于未然课件资源站</h1>
+        <p>预防性安全教育课件的结构设计、内容要点与使用参考</p>
+      </div>
+    </div>
+    <div class="header-tip">先预防 · 再应对 · 后复盘</div>
+  </div>
+</header>
+
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+      <li><a href="#intro" class="active">课件概述</a></li>
+      <li><a href="#category">主题分类</a></li>
+      <li><a href="#structure">结构设计</a></li>
+      <li><a href="#guide">使用建议</a></li>
+      <li><a href="#scene">应用场景</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero" id="intro">
+    <div class="container hero-grid">
+      <div>
+        <h2>“防患于未然”<em>课件</em>：把风险讲在前面，把方法教到手上</h2>
+        <p class="lead">
+          “防患于未然”出自《周易·既济》，意思是在祸患发生之前就加以预防。围绕这一主题制作的课件，
+          核心不是渲染危险，而是帮助学习者建立风险识别意识、掌握可操作的自护与协作方法。
+          它常用于校园安全教育、企业安全培训、社区应急科普等场景。
+        </p>
+        <ul class="hero-points">
+          <li>以预防为主线，讲清“风险从哪来”</li>
+          <li>以场景为载体，讲清“遇到怎么办”</li>
+          <li>以参与为方法，讲清“平时怎么练”</li>
+          <li>以复盘为收尾，讲清“如何持续改进”</li>
+        </ul>
+      </div>
+      <aside class="hero-side">
+        <h3>一份合格课件通常回答四个问题</h3>
+        <ol>
+          <li><strong>是什么：</strong>这类风险的具体表现与常见诱因。</li>
+          <li><strong>为什么：</strong>为什么它容易被忽视，后果如何演进。</li>
+          <li><strong>怎么办：</strong>发现、报告、处置、逃生、求助的步骤。</li>
+          <li><strong>怎么防：</strong>日常检查、制度约束、演练与复盘。</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 主题分类 -->
+  <section class="block" id="category">
+    <div class="container">
+      <div class="section-head">
+        <h2>常见课件主题分类</h2>
+        <span class="sub">按使用场景整理，可按需组合</span>
+      </div>
+      <p class="section-intro">
+        不同单位面临的风险类型差别很大，课件主题应结合本单位的实际环境、人员构成和既往隐患来选取。
+        以下分类用于帮助使用者快速定位内容方向，而非固定清单。
+      </p>
+      <div class="cat-grid">
+        <article class="cat-card">
+          <span class="cat-tag">校园场景</span>
+          <h3>校园日常安全与自我保护</h3>
+          <p>涵盖课间活动、上下楼梯、实验室操作、体育活动、校外出行等常见场景，重点在于规则意识与同伴互助。</p>
+          <div class="meta">适合：中小学班会、开学第一课</div>
+        </article>
+        <article class="cat-card">
+          <span class="cat-tag">消防主题</span>
+          <h3>火灾预防与初期处置</h3>
+          <p>讲清可燃物、助燃物、引火源的关系，介绍用电用气注意事项、疏散通道管理以及初期火情的正确应对方式。</p>
+          <div class="meta">适合：单位消防培训、宿舍管理</div>
+        </article>
+        <article class="cat-card">
+          <span class="cat-tag">生产安全</span>
+          <h3>岗位风险辨识与操作规范</h3>
+          <p>围绕设备操作、危险作业、有限空间、高处作业等环节，强调作业前确认、防护用品佩戴与异常上报流程。</p>
+          <div class="meta">适合：企业班组培训、新员工入职</div>
+        </article>
+        <article class="cat-card">
+          <span class="cat-tag">应急避险</span>
+          <h3>地震、暴雨与极端天气应对</h3>
+          <p>介绍不同预警信号的含义、就近避险原则、疏散路线选择以及灾后互助与心理调适的基本方法。</p>
+          <div class="meta">适合：社区科普、学校演练前讲解</div>
+        </article>
+        <article class="cat-card">
+          <span class="cat-tag">网络与财产</span>
+          <h3>防诈骗与个人信息保护</h3>
+          <p>梳理常见诈骗话术特征、转账前的核实习惯、账号密码管理，以及遇到可疑情况时的求助渠道。</p>
+          <div class="meta">适合：社区宣讲、老年群体科普</div>
+        </article>
+        <article class="cat-card">
+          <span class="cat-tag">卫生健康</span>
+          <h3>食品与日常健康风险预防</h3>
+          <p>包括食材储存、交叉污染防范、个人卫生习惯以及集体用餐环境中的常见注意事项。</p>
+          <div class="meta">适合：食堂管理、后勤培训</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 结构设计 -->
+  <section class="block" id="structure">
+    <div class="container">
+      <div class="section-head">
+        <h2>课件的结构设计思路</h2>
+        <span class="sub">从引入到收尾的六个环节</span>
+      </div>
+      <p class="section-intro">
+        好的“防患于未然”课件，逻辑上应当先建立认知，再训练判断，最后落到行动。
+        以下六个环节可以作为通用骨架，根据时长和受众做增删。
+      </p>
+      <div class="structure">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div class="step-body">
+            <h3>情境引入：用一个具体场景开场</h3>
+            <p>避免直接罗列条款。可以从一张照片、一段描述或一个提问开始，让学习者先感受到“这件事离我并不远”。</p>
+            <ul>
+              <li>提问式：如果现在走廊突然停电，你会怎么做？</li>
+              <li>对比式：同样的情况，两种不同做法带来什么结果？</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div class="step-body">
+            <h3>概念澄清：把关键术语讲明白</h3>
+            <p>“隐患”“风险”“事故”“应急处置”这些词经常被混用。课件中应给出简明定义，避免学习者理解偏差。</p>
+            <ul>
+              <li>隐患：可能导致事故的物的不安全状态或人的不安全行为。</li>
+              <li>预防：在事故发生前消除或控制隐患的措施。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div class="step-body">
+            <h3>风险辨识：教会“看出问题”</h3>
+            <p>这是课件的重点。与其直接给出结论，不如提供一套观察框架，让学习者自己发现身边的异常。</p>
+            <ul>
+              <li>看环境：通道是否畅通、标识是否清晰、设备是否老化。</li>
+              <li>看行为：是否存在违规操作、疲劳作业、侥幸心理。</li>
+              <li>看管理：检查是否流于形式、整改是否闭环。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">04</div>
+          <div class="step-body">
+            <h3>应对方法：给出可执行的步骤</h3>
+            <p>步骤要少而清晰，便于记忆。一般遵循“先保护自己、再报告求助、后协助他人”的顺序。</p>
+            <ul>
+              <li>停止当前动作，判断所处位置是否安全。</li>
+              <li>按预定路线撤离或就近避险，不乘坐电梯。</li>
+              <li>通过可靠渠道报告，说明位置、人数、现场情况。</li>
+            </ul>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">05</div>
+          <div class="step-body">
+            <h3>互动演练：把知识变成动作</h3>
+            <p>可以安排简短的桌面推演、路线指认、器材识别等环节。时间有限时，至少完成一次口头情境问答。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">06</div>
+          <div class="step-body">
+            <h3>总结复盘：留下一条行动清单</h3>
+            <p>结尾不宜停留在口号。可以给出一份“今天可以做的一件事”清单，例如检查一次插座、确认一次疏散图位置。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用建议 + 侧栏 -->
+  <section class="block" id="guide">
+    <div class="container">
+      <div class="section-head">
+        <h2>课件使用建议</h2>
+        <span class="sub">让内容真正落地</span>
+      </div>
+      <div class="two-col" style="margin-top:22px;">
+        <div class="article-box">
+          <h3>一、先了解受众，再决定深浅</h3>
+          <p>
+            面向小学生的课件，语言要具体、画面感强，多用“这样做 / 不要这样做”的对比；
+            面向企业员工的课件，则应结合岗位实际，加入操作规程与责任分工。
+            同一主题在不同受众面前，内容的详略和举例都应调整。
+          </p>
+
+          <h3>二、控制单页信息量</h3>
+          <p>
+            一页只讲一个要点，文字尽量精炼，把展开说明留给讲授者的口头表达。
+            如果一页出现三四个并列概念，学习者的注意力会被分散。
+            图表、流程图、对比表往往比大段文字更有效。
+          </p>
+
+          <h3>三、把“本地信息”补进去</h3>
+          <p>
+            通用课件只能提供框架，真正有用的是与本场所相关的信息，例如：
+          </p>
+          <ul>
+            <li>本楼层的疏散通道、安全出口和集合点位置。</li>
+            <li>灭火器、消火栓、应急照明等设施的具体分布。</li>
+            <li>本单位的值班电话、应急联系人和上报流程。</li>
+            <li>以往发生过的隐患案例与整改情况。</li>
+          </ul>
+
+          <h3>四、避免制造恐慌</h3>
+          <p>
+            预防教育的目的是提升掌控感，而不是放大焦虑。
+            描述后果时应客观、克制，重点放在“可以做什么”上，
+            并说明大多数风险通过规范行为是可以有效降低的。
+          </p>
+
+          <h3>五、配合演练与检查</h3>
+          <p>
+            课件讲授之后，建议安排一次实际演练或隐患排查活动。
+            演练不必追求规模，重点是让参与者走一遍流程、认一遍路线、用一次器材。
+            演练结束后及时复盘，记录发现的问题并明确整改责任。
+          </p>
+        </div>
+
+        <aside>
+          <div class="side-box">
+            <h3>制作前的准备清单</h3>
+            <ul class="side-list">
+              <li><span class="dot">·</span>明确受众年龄、岗位与已有认知水平</li>
+              <li><span class="dot">·</span>确定授课时长与场地条件</li>
+              <li><span class="dot">·</span>收集本单位真实隐患与案例素材</li>
+              <li><span class="dot">·</span>核对疏散路线图与应急联系方式</li>
+              <li><span class="dot">·</span>准备互动环节所需的器材或道具</li>
+              <li><span class="dot">·</span>预留答疑与总结时间</li>
+            </ul>
+          </div>
+          <div class="warn-box">
+            <h3>几点提醒</h3>
+            <ul>
+              <li>涉及专业处置的内容，应以当地主管部门和本单位制度为准。</li>
+              <li>不引用来源不明的事故数据与案例细节。</li>
+              <li>课件中的联系方式、路线图需定期核对更新。</li>
+              <li>演练前应做好安全预案，避免演练本身产生风险。</li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 使用建议表 -->
+  <section class="block">
+    <div class="container">
+      <div class="section-head">
+        <h2>不同受众的内容侧重</h2>
+        <span class="sub">参考对照表</span>
+      </div>
+      <p class="section-intro">
+        下表按常见受众类型整理了内容侧重与呈现方式的差异，供备课时参考。实际使用时应结合具体情况进行调整。
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>受众类型</th>
+              <th>内容侧重</th>
+              <th>呈现方式</th>
+              <th>互动建议</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>小学生</strong></td>
+              <td>规则意识、求助方法、同伴提醒</td>
+              <td>图片对比、简短口诀、情景故事</td>
+              <td>举手回答、角色扮演</td>
+            </tr>
+            <tr>
+              <td><strong>中学生</strong></td>
+              <td>风险辨识、自救互救、网络与出行安全</td>
+              <td>案例分析、流程图、小组讨论</td>
+              <td>情境判断、路线指认</td>
+            </tr>
+            <tr>
+              <td><strong>企业员工</strong></td>
+              <td>岗位操作规程、危险作业、隐患上报</td>
+              <td>制度对照、设备图示、事故树示意</td>
+              <td>现场提问、桌面推演</td>
+            </tr>
+            <tr>
+              <td><strong>社区居民</strong></td>
+              <td>用电用气、消防通道、防诈骗</td>
+              <td>生活场景照片、简明步骤卡</td>
+              <td>现场答疑、发放提示卡</td>
+            </tr>
+            <tr>
+              <td><strong>管理人员</strong></td>
+              <td>责任分工、检查机制、整改闭环</td>
+              <td>流程图、职责表、检查清单</td>
+              <td>案例分析、制度研讨</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 应用场景 -->
+  <section class="block" id="scene">
+    <div class="container">
+      <div class="section-head">
+        <h2>典型应用场景</h2>
+        <span class="sub">课件可以这样用</span>
+      </div>
+      <p class="section-intro">
+        “防患于未然”类课件的使用场景比较灵活，既可以作为独立课程，也可以嵌入到其他活动中。
+      </p>
+      <div class="scene-grid">
+        <div class="scene-card">
+          <h3>开学第一课</h3>
+          <p>结合新学期环境变化，重点讲解校园内常见风险点与求助方式，帮助学生快速建立规则感。</p>
+        </div>
+        <div class="scene-card">
+          <h3>班前会与例会</h3>
+          <p>选取一个具体风险点做短时讲解，控制在十分钟以内，配合当日作业内容进行提醒。</p>
+        </div>
+        <div class="scene-card">
+          <h3>演练前讲解</h3>
+          <p>在疏散演练或消防演练前，用课件说明流程、路线和注意事项，减少现场混乱。</p>
+        </div>
+        <div class="scene-card">
+          <h3>社区宣传活动</h3>
+          <p>以展板、短片或现场讲解的形式呈现，语言通俗，重点突出可立即采取的行动。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="block" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2>常见问题解答</h2>
+        <span class="sub">备课时容易遇到的疑问</span>
+      </div>
+      <div class="faq-list" style="margin-top:22px;">
+        <div class="faq-item">
+          <h3><span class="q">问</span>“防患于未然”课件和普通安全教育课件有什么区别？</h3>
+          <p>
+            两者有重叠，但侧重点不同。普通安全教育课件可能更偏向知识普及和应急处置，
+            而“防患于未然”更强调事前预防，关注隐患识别、日常检查、行为规范和制度落实，
+            目标是在风险演变为事故之前就把它控制住。
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">问</span>课件需要包含真实事故案例吗？</h3>
+          <p>
+            可以包含，但应确保案例来源可靠、表述客观，并且与授课对象的实际场景相关。
+            如果无法核实细节，建议使用概括性的情境描述，避免虚构时间、地点和伤亡数字。
+            案例的作用是帮助理解，而不是渲染情绪。
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">问</span>一次课件的合适时长是多少？</h3>
+          <p>
+            这取决于受众和场合。班会或班前会通常控制在十到二十分钟，
+            专题培训可以安排四十到六十分钟。无论时长多少，都建议留出提问和互动的时间，
+            否则内容容易被听过就忘。
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">问</span>如何判断课件是否有效？</h3>
+          <p>
+            可以从几个方面观察：学习者能否说出本场所的主要风险点；
+            能否指出疏散路线和安全设施位置；能否复述发现异常后的报告流程。
+            如果这些都能做到，说明课件基本达到了目的。后续还可以通过演练表现来进一步验证。
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">问</span>课件内容需要多久更新一次？</h3>
+          <p>
+            建议至少每学期或每年检查一次，遇到以下情况应及时更新：
+            场所布局发生变化、设施设备更换、制度流程调整、发生新的隐患或事件。
+            联系方式和疏散路线图尤其需要定期核对。
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3><span class="q">问</span>没有专业背景的人可以自己制作这类课件吗？</h3>
+          <p>
+            可以，但涉及专业处置的内容应参考权威资料或咨询相关管理人员。
+            制作时把握一个原则：讲清楚“看到什么、做什么、找谁报告”，
+            不夸大、不臆测，不确定的内容宁可留白或注明以正式制度为准。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>关于本站</h4>
+        <p>
+          本站围绕“防患于未然课件”整理安全教育课件的结构思路、内容要点与使用参考，
+          供教师、培训人员和社区工作者备课时借鉴。站内内容为通用性整理，
+          具体操作请以本单位制度和当地主管部门要求为准。
+        </p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#intro">课件概述</a></li>
+          <li><a href="#category">主题分类</a></li>
+          <li><a href="#structure">结构设计</a></li>
+          <li><a href="#guide">使用建议</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>使用提示</h4>
+        <ul>
+          <li>结合本场所实际情况调整内容</li>
+          <li>定期核对疏散路线与联系方式</li>
+          <li>讲授之后配合演练与复盘</li>
+          <li>不引用来源不明的数据与案例</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2024 防患于未然课件资源站 · 内容仅供安全教育参考
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 导航高亮：滚动时根据当前区块更新激活状态
+  (function () {
+    var links = document.querySelectorAll('nav.main-nav a');
+    var sections = [];
+    links.forEach(function (link) {
+      var id = link.getAttribute('href');
+      if (id && id.charAt(0) === '#') {
+        var el = document.querySelector(id);
+        if (el) sections.push({ link: link, el: el });
+      }
+    });
+
+    function updateActive() {
+      var scrollPos = window.scrollY + 120;
+      var current = null;
+      sections.forEach(function (item) {
+        if (item.el.offsetTop <= scrollPos) {
+          current = item;
+        }
+      });
+      links.forEach(function (l) { l.classList.remove('active'); });
+      if (current) current.link.classList.add('active');
+    }
+
+    var ticking = false;
+    window.addEventListener('scroll', function () {
+      if (!ticking) {
+        window.requestAnimationFrame(function () {
+          updateActive();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+    updateActive();
+  })();
+</script>
+
+</body>
+  </html>
