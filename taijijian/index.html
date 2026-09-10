@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>太极剑42式-动作名称、套路要点与入门练习指南</title>
+<meta name="description" content="系统介绍太极剑42式套路的动作名称、分段结构、练习要点、常见问题与自学建议，帮助初学者理解这套国家推广的太极剑竞赛套路。">
+<meta name="keywords" content="太极剑42式,42式太极剑,太极剑动作名称,太极剑教学,太极剑入门,太极剑套路">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --ink:#1f2a24;
+  --ink-soft:#4a5a50;
+  --jade:#2f6b4f;
+  --jade-deep:#1d4a36;
+  --jade-light:#e8f1ec;
+  --gold:#b78a3c;
+  --paper:#f7f5ef;
+  --card:#ffffff;
+  --line:#dfe3dc;
+  --shadow:0 6px 22px rgba(31,42,36,.08);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Source Han Sans SC",sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:inherit;text-decoration:none;}
+img{max-width:100%;display:block;}
+
+/* ---------- 顶部 ---------- */
+.site-header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(247,245,239,.94);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1160px;margin:0 auto;
+  padding:14px 22px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand-mark{
+  width:42px;height:42px;border-radius:50%;
+  background:radial-gradient(circle at 32% 28%,#4d8f6d,#1d4a36 70%);
+  display:flex;align-items:center;justify-content:center;
+  color:#f3e7c9;font-weight:700;font-size:15px;letter-spacing:1px;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.25);
+}
+.brand-text strong{display:block;font-size:18px;letter-spacing:1px;}
+.brand-text span{display:block;font-size:12px;color:var(--ink-soft);letter-spacing:2px;}
+.main-nav ul{display:flex;gap:6px;list-style:none;flex-wrap:wrap;}
+.main-nav a{
+  display:block;padding:8px 14px;border-radius:6px;
+  font-size:15px;color:var(--ink-soft);transition:.2s;
+}
+.main-nav a:hover,.main-nav a.active{background:var(--jade-light);color:var(--jade-deep);}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  background:
+    linear-gradient(115deg,rgba(29,74,54,.94),rgba(47,107,79,.86)),
+    repeating-linear-gradient(45deg,rgba(255,255,255,.03) 0 12px,transparent 12px 24px);
+  color:#f2f6f2;
+  padding:66px 22px 58px;
+}
+.hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.35fr .95fr;gap:46px;align-items:center;}
+.hero-tag{
+  display:inline-block;font-size:13px;letter-spacing:3px;
+  border:1px solid rgba(240,230,200,.5);color:#f0e6c8;
+  padding:5px 14px;border-radius:20px;margin-bottom:20px;
+}
+.hero h1{font-size:38px;line-height:1.35;letter-spacing:1px;margin-bottom:18px;font-weight:700;}
+.hero h1 em{font-style:normal;color:#f0d79a;}
+.hero p{font-size:16.5px;color:#d8e6dc;max-width:620px;margin-bottom:26px;}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.btn{
+  display:inline-block;padding:12px 26px;border-radius:8px;
+  font-size:15px;transition:.22s;border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:#f0d79a;color:#1d4a36;font-weight:600;}
+.btn-primary:hover{background:#f7e6bb;transform:translateY(-2px);}
+.btn-ghost{border-color:rgba(240,215,154,.6);color:#f0d79a;}
+.btn-ghost:hover{background:rgba(240,215,154,.14);}
+.hero-side{
+  background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:14px;padding:24px 24px 20px;
+}
+.hero-side h3{font-size:15px;letter-spacing:2px;color:#f0d79a;margin-bottom:14px;font-weight:600;}
+.hero-side ul{list-style:none;font-size:14.5px;color:#dbe8de;}
+.hero-side li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.14);display:flex;justify-content:space-between;gap:12px;}
+.hero-side li:last-child{border-bottom:none;}
+.hero-side li span{color:#a9c6b5;font-size:13.5px;}
+
+/* ---------- 通用容器 ---------- */
+.container{max-width:1160px;margin:0 auto;padding:0 22px;}
+.section{padding:62px 0;}
+.section-alt{background:#fff;}
+.section-head{margin-bottom:34px;}
+.section-head .eyebrow{
+  font-size:13px;letter-spacing:3px;color:var(--gold);
+  text-transform:uppercase;margin-bottom:8px;
+}
+.section-head h2{font-size:27px;letter-spacing:1px;color:var(--jade-deep);}
+.section-head p{color:var(--ink-soft);margin-top:10px;max-width:760px;font-size:15.5px;}
+
+/* ---------- 简介 ---------- */
+.intro-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:34px;align-items:start;}
+.intro-text p{margin-bottom:16px;color:#334038;}
+.intro-text strong{color:var(--jade-deep);}
+.fact-card{
+  background:var(--jade-light);border-radius:12px;padding:24px;
+  border:1px solid #d3e3d9;
+}
+.fact-card h3{font-size:16px;color:var(--jade-deep);margin-bottom:14px;letter-spacing:1px;}
+.fact-card dl{font-size:14.5px;color:#3b4a41;}
+.fact-card dt{color:var(--gold);font-weight:600;margin-top:10px;}
+.fact-card dt:first-child{margin-top:0;}
+.fact-card dd{margin-left:0;}
+
+/* ---------- 动作列表 ---------- */
+.moves-toolbar{
+  display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;
+}
+.chip{
+  padding:7px 16px;border-radius:20px;border:1px solid var(--line);
+  background:#fff;font-size:14px;color:var(--ink-soft);cursor:pointer;transition:.2s;
+}
+.chip:hover{border-color:var(--jade);color:var(--jade-deep);}
+.chip.active{background:var(--jade-deep);border-color:var(--jade-deep);color:#fff;}
+.moves-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:14px;
+}
+.move-item{
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:14px 16px;display:flex;gap:12px;align-items:flex-start;
+  transition:.2s;
+}
+.move-item:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:#c9d8cf;}
+.move-num{
+  flex:0 0 30px;height:30px;border-radius:50%;
+  background:var(--jade-light);color:var(--jade-deep);
+  display:flex;align-items:center;justify-content:center;
+  font-size:13.5px;font-weight:600;
+}
+.move-name{font-size:15px;font-weight:600;color:#243029;line-height:1.5;}
+.move-tip{font-size:13px;color:#7b8a80;margin-top:2px;}
+
+/* ---------- 分段 ---------- */
+.segment-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.segment-card{
+  background:#fff;border-radius:12px;padding:24px;
+  border:1px solid var(--line);border-top:3px solid var(--jade);
+}
+.segment-card h3{font-size:17px;color:var(--jade-deep);margin-bottom:8px;}
+.segment-card .range{font-size:13px;color:var(--gold);letter-spacing:1px;margin-bottom:12px;display:block;}
+.segment-card p{font-size:14.5px;color:#465349;}
+
+/* ---------- 要点 ---------- */
+.tips-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;}
+.tip-card{
+  background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;
+}
+.tip-card .icon{
+  width:38px;height:38px;border-radius:9px;background:var(--jade-light);
+  color:var(--jade-deep);display:flex;align-items:center;justify-content:center;
+  font-size:17px;margin-bottom:14px;font-weight:700;
+}
+.tip-card h3{font-size:16px;margin-bottom:8px;color:#243029;}
+.tip-card p{font-size:14.5px;color:#4d5b52;}
+
+/* ---------- 学习路径 ---------- */
+.path{position:relative;padding-left:26px;}
+.path::before{
+  content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+  background:linear-gradient(var(--jade),#cfe0d6);
+}
+.path-step{position:relative;padding-bottom:26px;}
+.path-step:last-child{padding-bottom:0;}
+.path-step::before{
+  content:"";position:absolute;left:-26px;top:6px;width:16px;height:16px;
+  border-radius:50%;background:#fff;border:3px solid var(--jade);
+}
+.path-step h3{font-size:16px;color:var(--jade-deep);margin-bottom:6px;}
+.path-step p{font-size:14.5px;color:#4d5b52;}
+
+/* ---------- FAQ ---------- */
+.faq-list{max-width:860px;}
+.faq-item{
+  background:#fff;border:1px solid var(--line);border-radius:10px;
+  margin-bottom:12px;overflow:hidden;
+}
+.faq-q{
+  width:100%;text-align:left;background:none;border:none;
+  padding:17px 20px;font-size:15.5px;font-weight:600;color:#243029;
+  cursor:pointer;display:flex;justify-content:space-between;gap:14px;
+  font-family:inherit;
+}
+.faq-q .plus{color:var(--jade);font-weight:400;font-size:19px;transition:.25s;}
+.faq-item.open .plus{transform:rotate(45deg);}
+.faq-a{
+  max-height:0;overflow:hidden;transition:max-height .3s ease;
+  font-size:14.5px;color:#4d5b52;
+}
+.faq-a p{padding:0 20px 18px;}
+.faq-item.open .faq-a{max-height:320px;}
+
+/* ---------- 注意事项 ---------- */
+.notice{
+  background:#fdf8ec;border:1px solid #ecdcb4;border-left:4px solid var(--gold);
+  border-radius:10px;padding:22px 24px;font-size:14.5px;color:#5b4c2c;
+}
+.notice h3{font-size:16px;color:#8a6a24;margin-bottom:10px;}
+.notice ul{margin-left:18px;}
+.notice li{margin-bottom:6px;}
+
+/* ---------- 页脚 ---------- */
+.site-footer{
+  background:#1b2a22;color:#b9c9bf;padding:46px 22px 26px;font-size:14px;
+}
+.footer-inner{
+  max-width:1160px;margin:0 auto;
+  display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:34px;
+}
+.site-footer h4{color:#e6efe8;font-size:15px;margin-bottom:14px;letter-spacing:1px;}
+.site-footer p{color:#93a79a;line-height:1.8;}
+.site-footer ul{list-style:none;}
+.site-footer li{margin-bottom:8px;}
+.site-footer a{color:#93a79a;transition:.2s;}
+.site-footer a:hover{color:#f0d79a;}
+.footer-bottom{
+  max-width:1160px;margin:30px auto 0;padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:13px;color:#7e9187;text-align:center;
+}
+
+/* ---------- 响应式 ---------- */
+@media(max-width:960px){
+  .hero-inner{grid-template-columns:1fr;gap:30px;}
+  .intro-grid{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:680px){
+  body{font-size:15px;}
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px;}
+  .main-nav ul{gap:2px;}
+  .main-nav a{padding:6px 10px;font-size:14px;}
+  .hero{padding:44px 20px 40px;}
+  .hero h1{font-size:27px;}
+  .hero p{font-size:15px;}
+  .section{padding:44px 0;}
+  .section-head h2{font-size:22px;}
+  .footer-inner{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-mark">剑</div>
+      <div class="brand-text">
+        <strong>太极剑42式</strong>
+        <span>套路 · 要领 · 练习</span>
+      </div>
+    </div>
+    <nav class="main-nav" aria-label="主导航">
+      <ul>
+        <li><a href="#intro" class="active">套路简介</a></li>
+        <li><a href="#moves">动作名称</a></li>
+        <li><a href="#segments">分段结构</a></li>
+        <li><a href="#tips">练习要点</a></li>
+        <li><a href="#path">学习路径</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">国家推广套路</span>
+        <h1>太极剑42式<br><em>动作名称、套路结构与练习方法</em></h1>
+        <p>太极剑42式是一套流传较广的太极剑竞赛与健身套路，共四十二个动作，融合了不同流派太极剑的典型技法。本页整理其动作名称、分段结构、练习要点与自学思路，供初学者与爱好者参考。</p>
+        <div class="hero-actions">
+          <a href="#moves" class="btn btn-primary">查看动作名称</a>
+          <a href="#path" class="btn btn-ghost">了解学习顺序</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <h3>快速了解</h3>
+        <ul>
+          <li>动作数量 <span>共 42 式</span></li>
+          <li>套路分段 <span>通常分 4 段</span></li>
+          <li>主要器械 <span>太极剑（软剑）</span></li>
+          <li>练习特点 <span>缓慢连贯、剑随身走</span></li>
+          <li>适合人群 <span>有太极基础者</span></li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 套路简介 -->
+  <section class="section" id="intro">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Overview</div>
+        <h2>太极剑42式是什么</h2>
+        <p>了解这套剑术的来源、定位与它和太极拳之间的关系，是开始练习前的第一步。</p>
+      </div>
+      <div class="intro-grid">
+        <div class="intro-text">
+          <p><strong>太极剑42式</strong>是在太极拳基础上发展起来的器械套路，以剑为器械，沿用太极拳缓慢、圆活、连贯的运动方式。它把太极剑中常见的劈、刺、点、撩、挂、抹、截、扫等剑法组织成一套结构完整的演练程序，动作数量为四十二个，因此常被称作“42式太极剑”。</p>
+          <p>与传统的单式剑法或流派套路相比，42式的动作编排更注重均衡与规范，左右方向的动作相对对称，节奏起伏也比较清晰。这使得它既适合作为竞赛与考核的演练内容，也常被太极拳爱好者用作日常健身与进阶练习。</p>
+          <p>练习太极剑的前提通常是具备一定的太极拳基础。因为剑法中的步伐、身法、重心转换与太极拳一脉相承，如果拳架尚未熟练，直接上手剑法容易顾此失彼。对零基础者来说，先练好太极拳基本步型与手型，再进入剑法学习，会顺畅很多。</p>
+          <p>需要说明的是，不同教材、不同教练在动作名称的用字和顺序上可能存在细微差别，练习时应以所跟随的教材或老师所授为准，本页内容用于帮助建立整体框架与理解思路。</p>
+        </div>
+        <aside class="fact-card">
+          <h3>基本认识</h3>
+          <dl>
+            <dt>器械类型</dt>
+            <dd>太极剑，剑身较软，讲究剑走轻灵</dd>
+            <dt>运动风格</dt>
+            <dd>缓慢柔和、连绵不断、以腰为轴</dd>
+            <dt>核心要求</dt>
+            <dd>剑法清晰、身剑协调、步法稳健</dd>
+            <dt>常见用途</dt>
+            <dd>健身锻炼、竞赛演练、套路考核</dd>
+            <dt>学习前提</dt>
+            <dd>建议先掌握太极拳基本步法与身法</dd>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动作名称 -->
+  <section class="section section-alt" id="moves">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Movements</div>
+        <h2>太极剑42式动作名称一览</h2>
+        <p>下面按常见教材顺序列出四十二个动作的名称，便于记忆与对照练习。不同版本在个别名称上可能略有差异。</p>
+      </div>
+      <div class="moves-toolbar" role="group" aria-label="动作筛选">
+        <button class="chip active" data-filter="all">全部</button>
+        <button class="chip" data-filter="seg1">第一段</button>
+        <button class="chip" data-filter="seg2">第二段</button>
+        <button class="chip" data-filter="seg3">第三段</button>
+        <button class="chip" data-filter="seg4">第四段</button>
+      </div>
+      <div class="moves-grid" id="movesGrid">
+        <!-- 第一段 -->
+        <div class="move-item" data-seg="seg1"><div class="move-num">1</div><div><div class="move-name">起势</div><div class="move-tip">调匀呼吸，进入状态</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">2</div><div><div class="move-name">并步点剑</div><div class="move-tip">剑尖向前下方点出</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">3</div><div><div class="move-name">弓步削剑</div><div class="move-tip">剑身平削，力达剑刃</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">4</div><div><div class="move-name">提膝劈剑</div><div class="move-tip">提膝与劈剑同步</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">5</div><div><div class="move-name">左弓步拦</div><div class="move-tip">剑走弧形，格挡来势</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">6</div><div><div class="move-name">左虚步撩</div><div class="move-tip">由下向上撩出</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">7</div><div><div class="move-name">右弓步撩</div><div class="move-tip">重心前移，剑随身走</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">8</div><div><div class="move-name">提膝捧剑</div><div class="move-tip">双手捧剑于体前</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">9</div><div><div class="move-name">蹬脚前刺</div><div class="move-tip">蹬腿与刺剑协调一致</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">10</div><div><div class="move-name">跳步平刺</div><div class="move-tip">跳跃落地后平稳刺出</div></div></div>
+        <div class="move-item" data-seg="seg1"><div class="move-num">11</div><div><div class="move-name">转身下刺</div><div class="move-tip">转体带动剑势向下</div></div></div>
+        <!-- 第二段 -->
+        <div class="move-item" data-seg="seg2"><div class="move-num">12</div><div><div class="move-name">弓步平斩</div><div class="move-tip">以腰带臂，斩击有力</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">13</div><div><div class="move-name">弓步崩剑</div><div class="move-tip">剑尖上崩，力在剑身</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">14</div><div><div class="move-name">歇步压剑</div><div class="move-tip">下压时保持身体中正</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">15</div><div><div class="move-name">进步绞剑</div><div class="move-tip">剑走小圆，连续绞动</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">16</div><div><div class="move-name">提膝上刺</div><div class="move-tip">提膝稳定，刺剑到位</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">17</div><div><div class="move-name">虚步下截</div><div class="move-tip">剑向下截挡，步型轻灵</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">18</div><div><div class="move-name">右左平带</div><div class="move-tip">左右转换，剑身平带</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">19</div><div><div class="move-name">弓步劈剑</div><div class="move-tip">劈剑路线要直</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">20</div><div><div class="move-name">丁步托剑</div><div class="move-tip">托剑时手腕放松</div></div></div>
+        <div class="move-item" data-seg="seg2"><div class="move-num">21</div><div><div class="move-name">分脚后点</div><div class="move-tip">分脚与点剑配合</div></div></div>
+        <!-- 第三段 -->
+        <div class="move-item" data-seg="seg3"><div class="move-num">22</div><div><div class="move-name">仆步穿剑</div><div class="move-tip">低势穿剑，注意膝关节</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">23</div><div><div class="move-name">蹬脚架剑</div><div class="move-tip">架剑与蹬脚同时完成</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">24</div><div><div class="move-name">提膝点剑</div><div class="move-tip">点剑干脆，重心稳定</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">25</div><div><div class="move-name">仆步横扫</div><div class="move-tip">横扫幅度大，以腰带动</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">26</div><div><div class="move-name">弓步下截</div><div class="move-tip">截剑方向明确</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">27</div><div><div class="move-name">弓步下刺</div><div class="move-tip">刺剑与弓步同步</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">28</div><div><div class="move-name">右左云抹</div><div class="move-tip">云剑圆活，抹剑平稳</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">29</div><div><div class="move-name">右弓步劈</div><div class="move-tip">劈势完整，力从脊发</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">30</div><div><div class="move-name">后举腿架剑</div><div class="move-tip">平衡动作，注意支撑腿</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">31</div><div><div class="move-name">丁步点剑</div><div class="move-tip">丁步要稳，点剑要准</div></div></div>
+        <div class="move-item" data-seg="seg3"><div class="move-num">32</div><div><div class="move-name">马步推剑</div><div class="move-tip">马步扎实，推剑有力</div></div></div>
+        <!-- 第四段 -->
+        <div class="move-item" data-seg="seg4"><div class="move-num">33</div><div><div class="move-name">独立上托</div><div class="move-tip">单腿支撑，剑向上托</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">34</div><div><div class="move-name">进步挂剑</div><div class="move-tip">挂剑走立圆</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">35</div><div><div class="move-name">歇步崩剑</div><div class="move-tip">崩剑短促，步型下沉</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">36</div><div><div class="move-name">弓步反刺</div><div class="move-tip">反手刺出，注意腕部</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">37</div><div><div class="move-name">转身下刺</div><div class="move-tip">转体连贯，刺剑到位</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">38</div><div><div class="move-name">提膝提剑</div><div class="move-tip">提膝与提剑协调</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">39</div><div><div class="move-name">行步穿剑</div><div class="move-tip">行步平稳，穿剑顺畅</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">40</div><div><div class="move-name">摆腿架剑</div><div class="move-tip">摆腿幅度因人而异</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">41</div><div><div class="move-name">弓步直刺</div><div class="move-tip">直刺路线要正</div></div></div>
+        <div class="move-item" data-seg="seg4"><div class="move-num">42</div><div><div class="move-name">收势</div><div class="move-tip">气息归元，动作收整</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 分段结构 -->
+  <section class="section" id="segments">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Structure</div>
+        <h2>套路分段与练习结构</h2>
+        <p>把四十二式拆成若干段来练习，比一次性记完整套更容易掌握。常见教材将其分为四段，各段侧重有所不同。</p>
+      </div>
+      <div class="segment-list">
+        <article class="segment-card">
+          <h3>第一段：基础剑法与步型</h3>
+          <span class="range">动作 1 — 11</span>
+          <p>以起势、点、削、劈、拦、撩、捧、刺等基本剑法为主，配合弓步、虚步、提膝等基本步型，是整套动作的基础部分，也是练习重点所在。</p>
+        </article>
+        <article class="segment-card">
+          <h3>第二段：转换与方向变化</h3>
+          <span class="range">动作 12 — 21</span>
+          <p>加入斩、崩、压、绞、带、托等剑法，方向转换增多，对身法与剑法的配合要求提高，练习时需注意动作之间的衔接。</p>
+        </article>
+        <article class="segment-card">
+          <h3>第三段：低势与平衡</h3>
+          <span class="range">动作 22 — 32</span>
+          <p>包含仆步、云抹、架剑、后举腿等动作，对腿部力量、平衡能力与柔韧性有一定要求，初学者可先降低动作幅度。</p>
+        </article>
+        <article class="segment-card">
+          <h3>第四段：收束与归元</h3>
+          <span class="range">动作 33 — 42</span>
+          <p>以独立、挂剑、崩剑、反刺、行步穿剑等动作收束，最后以收势结束，节奏由展开逐渐回归平稳。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 练习要点 -->
+  <section class="section section-alt" id="tips">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Key Points</div>
+        <h2>练习太极剑42式的几个要点</h2>
+        <p>剑法练习与拳架练习有相通之处，但也有器械本身的特点。以下几点常被教练反复强调。</p>
+      </div>
+      <div class="tips-grid">
+        <article class="tip-card">
+          <div class="icon">剑</div>
+          <h3>剑法要清晰</h3>
+          <p>点、刺、劈、撩等剑法各有其运行路线和力点。练习时先把单个剑法的方向、高度和速度做准确，再考虑连贯与美观。</p>
+        </article>
+        <article class="tip-card">
+          <div class="icon">身</div>
+          <h3>身剑要协调</h3>
+          <p>太极剑讲究“剑随身走”，动作的动力来自腰腿，而不是单纯用手臂挥剑。手臂放松，以腰带臂，剑势才自然。</p>
+        </article>
+        <article class="tip-card">
+          <div class="icon">步</div>
+          <h3>步法要稳健</h3>
+          <p>弓步、虚步、仆步、歇步等步型要做得清楚，重心转换平稳。步法不稳，剑法再漂亮也难以成立。</p>
+        </article>
+        <article class="tip-card">
+          <div class="icon">息</div>
+          <h3>呼吸要自然</h3>
+          <p>不必刻意追求某种呼吸方式，保持自然顺畅即可。动作熟练后，呼吸会随动作开合自然调整。</p>
+        </article>
+        <article class="tip-card">
+          <div class="icon">缓</div>
+          <h3>速度要均匀</h3>
+          <p>整套动作以缓慢连贯为主，除个别发力动作外，速度不宜忽快忽慢。均匀的节奏有助于体会动作细节。</p>
+        </article>
+        <article class="tip-card">
+          <div class="icon">度</div>
+          <h3>幅度要量力</h3>
+          <p>仆步、摆腿、后举腿等动作对柔韧性和力量有要求，初学者可适当减小幅度，随着能力提高再逐步到位。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 学习路径 -->
+  <section class="section" id="path">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Learning Path</div>
+        <h2>从零开始的学习顺序建议</h2>
+        <p>太极剑42式动作较多，按阶段推进比急于求成更有效。以下顺序供参考，具体可结合自身基础与老师安排调整。</p>
+      </div>
+      <div class="path">
+        <div class="path-step">
+          <h3>第一步：打好太极拳基础</h3>
+          <p>先熟悉太极拳的基本手型、步型和身法，如弓步、虚步、重心转换等。有拳架基础后，学习剑法会轻松许多。</p>
+        </div>
+        <div class="path-step">
+          <h3>第二步：熟悉器械与握剑方法</h3>
+          <p>了解太极剑的结构与握法，掌握基本的持剑、握剑、剑指等手型，避免因握法不当导致手腕紧张。</p>
+        </div>
+        <div class="path-step">
+          <h3>第三步：分解学习单个剑法</h3>
+          <p>把点、刺、劈、撩、拦、抹等基本剑法逐个练习，先求路线准确，再求速度与力度，不急于连成套路。</p>
+        </div>
+        <div class="path-step">
+          <h3>第四步：分段串联动作</h3>
+          <p>按四段结构逐段学习，每段熟练后再进入下一段。分段练习有助于记忆，也便于发现衔接中的问题。</p>
+        </div>
+        <div class="path-step">
+          <h3>第五步：整套连贯演练</h3>
+          <p>各段熟练后连成整套，重点体会动作之间的过渡与节奏变化，逐步做到连绵不断、气势完整。</p>
+        </div>
+        <div class="path-step">
+          <h3>第六步：细抠与提升</h3>
+          <p>在能完整演练的基础上，再回头打磨细节，如剑法力点、眼神配合、身法转换等，逐步提高演练质量。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>关于太极剑42式的常见问题</h2>
+        <p>整理初学者经常提出的疑问，帮助减少练习中的困惑。</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">没有太极拳基础能直接学太极剑42式吗？<span class="plus">+</span></button>
+          <div class="faq-a"><p>可以接触，但进步通常会慢一些。太极剑的步法、身法与太极拳相通，如果拳架基础薄弱，容易出现重心不稳、动作脱节的情况。建议至少先掌握太极拳的基本步型与身法，再进入剑法学习。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">太极剑42式和传统太极剑有什么区别？<span class="plus">+</span></button>
+          <div class="faq-a"><p>42式是在传统太极剑基础上整理编排的套路，动作数量固定、结构相对规范，左右动作较为均衡，常被用于竞赛与教学。传统流派太极剑则保留了各自的风格特点，动作名称与顺序可能差异较大。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">练习时应该用真剑还是练习剑？<span class="plus">+</span></button>
+          <div class="faq-a"><p>初学者一般使用未开刃的太极练习剑，重量较轻、安全性较高，便于掌握动作。随着熟练度提高，可根据需要更换重量和手感更接近实战剑的器械。无论使用哪种器械，练习时都应注意周围空间与他人安全。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">一套42式练下来需要多长时间？<span class="plus">+</span></button>
+          <div class="faq-a"><p>演练时间与个人节奏有关，通常整套慢练会持续数分钟。初学者不必追求时间长短，先把动作做准确、衔接顺畅更重要。熟练之后，节奏会自然趋于稳定。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">动作名称记不住怎么办？<span class="plus">+</span></button>
+          <div class="faq-a"><p>可以按分段记忆，先记住每段的起止动作，再逐步填充中间动作。也可以把动作名称抄写下来，配合练习反复对照，记忆会随着身体熟练而自然加深。</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">练习中膝盖不舒服要注意什么？<span class="plus">+</span></button>
+          <div class="faq-a"><p>弓步、仆步等动作对膝关节有一定负担。练习时应控制下蹲幅度，膝盖方向与脚尖保持一致，避免膝盖内扣或过度前压。如持续不适，应暂停练习并咨询专业人士。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 注意事项 -->
+  <section class="section">
+    <div class="container">
+      <div class="notice">
+        <h3>练习提醒</h3>
+        <ul>
+          <li>练习前进行适度热身，活动肩、腰、膝、踝等关节，减少运动损伤风险。</li>
+          <li>选择平整、开阔、无障碍物的场地，与他人保持足够距离，避免器械误伤。</li>
+          <li>动作幅度与下蹲深度应量力而行，不必强求与教材完全一致。</li>
+          <li>如身体有伤病或特殊状况，练习前宜咨询医生或专业教练的意见。</li>
+          <li>本页内容为一般性介绍，具体动作细节请以正规教材或老师的指导为准。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <h4>太极剑42式</h4>
+      <p>整理太极剑42式的动作名称、分段结构、练习要点与学习思路，为太极拳爱好者提供一份便于查阅的基础资料。</p>
+    </div>
+    <div>
+      <h4>内容导航</h4>
+      <ul>
+        <li><a href="#intro">套路简介</a></li>
+        <li><a href="#moves">动作名称</a></li>
+        <li><a href="#segments">分段结构</a></li>
+        <li><a href="#tips">练习要点</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>学习参考</h4>
+      <ul>
+        <li><a href="#path">学习顺序建议</a></li>
+        <li><a href="#faq">常见问题</a></li>
+        <li><a href="#tips">剑法要点</a></li>
+        <li><a href="#intro">基础认识</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>本页内容用于太极剑42式的学习参考，动作细节请以正规教材与专业指导为准。</p>
+  </div>
+</footer>
+
+<script>
+// 动作分段筛选
+(function(){
+  var chips = document.querySelectorAll('.chip');
+  var items = document.querySelectorAll('#movesGrid .move-item');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      var f = chip.getAttribute('data-filter');
+      items.forEach(function(item){
+        if(f === 'all' || item.getAttribute('data-seg') === f){
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+
+// FAQ 展开收起
+(function(){
+  var qs = document.querySelectorAll('.faq-q');
+  qs.forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = q.parentNode;
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('open');
+      });
+      if(!isOpen){ item.classList.add('open'); }
+    });
+  });
+})();
+
+// 导航高亮
+(function(){
+  var links = document.querySelectorAll('.main-nav a');
+  links.forEach(function(link){
+    link.addEventListener('click', function(){
+      links.forEach(function(l){ l.classList.remove('active'); });
+      link.classList.add('active');
+    });
+  });
+})();
+</script>
+
+</body>
+                                         </html>
